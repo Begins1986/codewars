@@ -23,4 +23,14 @@ function peopleWithAgeDrink(old) {
     } else {
       return 'drink whisky';
     }
-  };
+};
+
+// Parse nice int from char problem
+function getAge(inputString){
+  return parseInt(inputString[0]);
+}
+
+// Boiled Eggs
+function cookingTime(eggs) {
+  return 5 * Math.ceil(eggs / 8);
+}
