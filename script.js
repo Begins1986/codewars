@@ -34,3 +34,31 @@ function getAge(inputString){
 function cookingTime(eggs) {
   return 5 * Math.ceil(eggs / 8);
 }
+
+// Count the divisors of a number
+function getDivisorsCnt(n){
+  let i, sum=0;
+for(i=0; i<=n; i++){
+  if (n%i==0){
+    sum++;
+  }
+}
+return sum;
+}
+
+// I love you, a little , a lot, passionately ... not at all
+function howMuchILoveYou(nbPetals) {
+  if (nbPetals%6==1){
+    return "I love you";
+  } else if (nbPetals%6==2){
+    return "a little";
+  } else if (nbPetals%6==3){
+    return "a lot";
+  } else if (nbPetals%6==4){
+    return "passionately";
+  } else if (nbPetals%6==5){
+    return "madly";
+  } else if (nbPetals%6==0){
+    return "not at all";
+  }
+}
