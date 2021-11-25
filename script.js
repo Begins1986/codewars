@@ -30,6 +30,11 @@ function getAge(inputString){
   return parseInt(inputString[0]);
 }
 
+// Narcissistic Numbers
+function isNarcissistic(n){
+  return n === +n.toString().split('').reduce((s, v, i, arr) => s + Math.pow(v, arr.length),0)
+}
+
 // Boiled Eggs
 function cookingTime(eggs) {
   return 5 * Math.ceil(eggs / 8);
@@ -76,3 +81,4 @@ function isTriangle(a,b,c){
 function correct(string){
   return string.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S');
 }
+
