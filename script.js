@@ -97,3 +97,11 @@ function reverseNumber(n) {
     return +Math.abs(n).toString().split('').reverse().join('')*(-1);
   } 
 }
+
+// Spinning Rings
+function spinningRings(innerMax, outerMax) {
+  for(var i = 1; innerMax - ((i - 1) % (innerMax + 1)) !== i % (outerMax + 1); i++) {
+    
+  }
+return i;
+};
