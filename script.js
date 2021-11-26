@@ -30,6 +30,13 @@ function getAge(inputString){
   return parseInt(inputString[0]);
 }
 
+// Reversed Message
+function reverseMessage(str) {
+  str=str.split(` `).map(v=>v.split('').reverse().join``).join` `;
+  str=str.split(` `).map(v=>v.slice(0,1).toUpperCase()+v.slice(1).toLowerCase()).reverse().join` `;
+  return str;
+}
+
 // Narcissistic Numbers
 function isNarcissistic(n){
   return n === +n.toString().split('').reduce((s, v, i, arr) => s + Math.pow(v, arr.length),0)
@@ -82,3 +89,11 @@ function correct(string){
   return string.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S');
 }
 
+// Reverse a Number
+function reverseNumber(n) {
+  if (n>=0){
+   return +Math.abs(n).toString().split('').reverse().join(''); 
+  } else {
+    return +Math.abs(n).toString().split('').reverse().join('')*(-1);
+  } 
+}
