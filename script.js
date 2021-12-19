@@ -122,3 +122,18 @@ function makeNegative(num) {
     return num;
   } else return num*(-1);
 }
+
+//Student's Final Grade
+function finalGrade (exam, projects) {
+  console.log (exam, projects)
+  if ((projects > 10)||(exam > 90)){
+    return 100;
+  } else if ((exam > 75) && (projects >= 5)){
+    return 90;
+  } else   if ((exam > 50) && (projects >= 2)){
+    return 75;
+  } else{
+    return 0;
+  }
+}
+
