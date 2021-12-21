@@ -172,3 +172,8 @@ function bmi(weight, height) {
  function paperwork(n, m) {
   return n > 0 && m > 0 ? n * m : 0
 }
+
+// Is he gonna survive?
+function hero(bullets, dragons){
+  return ((bullets/2)>=dragons) ? true : false;
+}
