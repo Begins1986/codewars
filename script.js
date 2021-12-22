@@ -177,3 +177,8 @@ function bmi(weight, height) {
 function hero(bullets, dragons){
   return ((bullets/2)>=dragons) ? true : false;
 }
+
+// Find the Remainder
+function remainder(a, b){
+  return a>b ? a%b : b%a
+}
