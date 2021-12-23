@@ -188,3 +188,8 @@ function remainder(a, b){
 function booleanToString(b){
   return String(b);
  }
+
+//  Abbreviate a Two Word Name
+ function abbrevName(name){
+  return name.toUpperCase().split(' ').map(el=>el.charAt(0)).join('.');
+}
