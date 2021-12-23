@@ -182,3 +182,9 @@ function hero(bullets, dragons){
 function remainder(a, b){
   return a>b ? a%b : b%a
 }
+
+
+// Convert a Boolean to a String
+function booleanToString(b){
+  return String(b);
+ }
