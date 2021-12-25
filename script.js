@@ -193,3 +193,8 @@ function booleanToString(b){
  function abbrevName(name){
   return name.toUpperCase().split(' ').map(el=>el.charAt(0)).join('.');
 }
+
+// Two Oldest Ages
+function twoOldestAges(ages){
+  return ages.sort((a, b) => a - b).slice(-2)
+}
