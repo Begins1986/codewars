@@ -198,3 +198,14 @@ function booleanToString(b){
 function twoOldestAges(ages){
   return ages.sort((a, b) => a - b).slice(-2)
 }
+
+// Thinkful - Logic Drills: Traffic light
+function updateLight(current) {
+  if (current == 'green'){
+   return 'yellow'
+ } else if (current == 'yellow'){
+   return 'red'
+ } else if (current == 'red'){
+   return 'green'
+ }
+}
