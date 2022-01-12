@@ -209,3 +209,18 @@ function updateLight(current) {
    return 'green'
  }
 }
+
+
+// Exclamation marks series #2: Remove all exclamation marks from the end of sentence
+function remove (string) {
+  let arr=string.split('');
+  for(let i=arr.length-1; i>0; i--){
+    if(arr[i]=='!'){
+     arr.pop()
+     } else {
+       break
+     }
+  }  
+  console.log(arr)
+  return arr.join('');
+}
