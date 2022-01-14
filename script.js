@@ -224,3 +224,10 @@ function remove (string) {
   console.log(arr)
   return arr.join('');
 }
+
+
+
+// Grasshopper - Check for factor
+function checkForFactor (base, factor) {
+  return base%factor==0?true:false
+}
