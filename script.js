@@ -231,3 +231,9 @@ function remove (string) {
 function checkForFactor (base, factor) {
   return base%factor==0?true:false
 }
+
+
+// Thinkful - Number Drills: Congo warehouses
+function boxCapacity(length, width, height) {
+  return Math.trunc(length/(16/12))*Math.trunc(width/(16/12))*Math.trunc(height/(16/12)); //code here
+}
