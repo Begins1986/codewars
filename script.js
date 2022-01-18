@@ -237,3 +237,8 @@ function checkForFactor (base, factor) {
 function boxCapacity(length, width, height) {
   return Math.trunc(length/(16/12))*Math.trunc(width/(16/12))*Math.trunc(height/(16/12)); //code here
 }
+
+// Holiday VIII - Duty Free
+function dutyFree(normPrice, discount, hol){
+  return Math.trunc(hol/(normPrice*(discount/100)))
+  }
