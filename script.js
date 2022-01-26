@@ -277,3 +277,9 @@ function dutyFree(normPrice, discount, hol){
       return length*width*height
     }
   }
+
+  // JavaScript Array Filter
+  function getEvenNumbers(numbersArray){
+    let result = numbersArray.filter(number => number%2==0)
+     return result 
+  }
