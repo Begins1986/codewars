@@ -283,3 +283,12 @@ function dutyFree(normPrice, discount, hol){
     let result = numbersArray.filter(number => number%2==0)
      return result 
   }
+
+  // Sum of two lowest positive integers
+  function sumTwoSmallestNumbers(numbers) { 
+    let arr = numbers.sort(function(a, b) {
+    return a - b;
+  });
+    console.log(arr)
+    return arr[0]+arr[1]
+  }
