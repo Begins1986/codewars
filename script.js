@@ -292,3 +292,8 @@ function dutyFree(normPrice, discount, hol){
     console.log(arr)
     return arr[0]+arr[1]
   }
+
+  // Sum of Minimums!
+  function sumOfMinimums(arr) {
+    return arr.map(v=>Math.min(...v)).reduce((a,b)=>a+b,0)
+  }
