@@ -332,3 +332,18 @@ function validateWord(s){
   }
   return Math.max(...Object.values(counts)) === Math.min(...Object.values(counts));
 }
+
+// The Barksdale Code
+function decode(string) {
+  const obj={1:9,
+             2:8,
+             3:7,
+             4:6,
+             5:0,
+             6:4,
+             7:3,
+             8:2,
+             9:1,
+             0:5}
+  return string.split('').map(a=>a=obj[a]).join('')
+ }
