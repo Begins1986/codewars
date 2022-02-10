@@ -347,3 +347,9 @@ function decode(string) {
              0:5}
   return string.split('').map(a=>a=obj[a]).join('')
  }
+
+
+//  Area or Perimeter
+ const areaOrPerimeter = function(l , w) {
+  return l==w?l*w:(l+w)*2
+};
