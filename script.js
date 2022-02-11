@@ -353,3 +353,11 @@ function decode(string) {
  const areaOrPerimeter = function(l , w) {
   return l==w?l*w:(l+w)*2
 };
+
+
+// Vowel Count
+function getCount(str) {
+  let arr = str.split('');
+  const result = arr.filter(el=>el=='a' || el=='e' || el=='i' || el=='o' || el=='u'); 
+  return result.length;
+}
