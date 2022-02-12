@@ -361,3 +361,12 @@ function getCount(str) {
   const result = arr.filter(el=>el=='a' || el=='e' || el=='i' || el=='o' || el=='u'); 
   return result.length;
 }
+
+// last digits of a number
+function lastDigit(n, d) {
+  if(d<=0){
+       return []
+    }  else{
+       return (""+n).split("").map(Number).slice(-d)
+    }
+  }
