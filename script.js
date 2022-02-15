@@ -381,3 +381,8 @@ function lastDigit(n, d) {
       return (p2[1] - p1[1]) / (p2[0] - p1[0])
     }
   }
+
+  // Sum The Strings
+  function sumStr(a,b) {
+    return String(Number(a)+Number(b))
+  }
