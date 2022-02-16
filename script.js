@@ -386,3 +386,8 @@ function lastDigit(n, d) {
   function sumStr(a,b) {
     return String(Number(a)+Number(b))
   }
+
+//Is a palindrom
+  const isPalindrome = (x) => {
+    return x.split("").reverse().join("").toLowerCase() === x.toLowerCase() ? true : false
+  }
