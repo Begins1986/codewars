@@ -391,3 +391,18 @@ function lastDigit(n, d) {
   const isPalindrome = (x) => {
     return x.split("").reverse().join("").toLowerCase() === x.toLowerCase() ? true : false
   }
+
+  // Count of positives / sum of negatives
+  function countPositivesSumNegatives(input) {
+    if(input == null||input.length<1 ){
+      return []
+    } else {
+      let num = input.filter(t=>t>0).length
+      console.log(num)
+      let summ = input.filter(t=>t<=0).reduce(function(sum, elem) {
+    return sum + elem;
+  }, 0);
+      console.log(summ)
+      return [num, summ]
+    }
+  }
