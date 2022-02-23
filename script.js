@@ -406,3 +406,9 @@ function lastDigit(n, d) {
       return [num, summ]
     }
   }
+
+
+  // Printer Errors
+  function printerError(s) {
+    return `${s.replace(/[a-m]/gi, "").length}/${s.length}`
+}
