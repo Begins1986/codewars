@@ -412,3 +412,10 @@ function lastDigit(n, d) {
   function printerError(s) {
     return `${s.replace(/[a-m]/gi, "").length}/${s.length}`
 }
+
+
+// V A P O R C O D E
+function vaporcode(string) {
+  console.log(string.split(' ').join('').toUpperCase().split('').join('  '))
+  return string.split(' ').join('').toUpperCase().split('').join('  ') 
+}
