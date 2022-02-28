@@ -419,3 +419,12 @@ function vaporcode(string) {
   console.log(string.split(' ').join('').toUpperCase().split('').join('  '))
   return string.split(' ').join('').toUpperCase().split('').join('  ') 
 }
+
+
+
+// All Star Code Challenge #22
+function toTime(seconds) {
+  let hour = Math.trunc(seconds/3600)
+  let minute = Math.trunc((seconds-hour*3600)/60)
+    return `${hour} hour(s) and ${minute} minute(s)`
+  }
