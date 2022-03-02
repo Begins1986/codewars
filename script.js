@@ -428,3 +428,8 @@ function toTime(seconds) {
   let minute = Math.trunc((seconds-hour*3600)/60)
     return `${hour} hour(s) and ${minute} minute(s)`
   }
+
+// USD => CNY
+function usdcny(usd) {
+  return `${(usd*6.75).toFixed(2)} Chinese Yuan` 
+}
