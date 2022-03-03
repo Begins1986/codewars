@@ -433,3 +433,10 @@ function toTime(seconds) {
 function usdcny(usd) {
   return `${(usd*6.75).toFixed(2)} Chinese Yuan` 
 }
+
+
+
+// Sum of all arguments
+function sum(...arr) {
+  return arr.reduce((sum,arg)=>sum+arg,0)
+ }
