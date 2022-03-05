@@ -440,3 +440,9 @@ function usdcny(usd) {
 function sum(...arr) {
   return arr.reduce((sum,arg)=>sum+arg,0)
  }
+
+
+//  By 3, or not by 3? That is the question . . .
+ function divisibleByThree(str){
+  return str.split('').reduce((sum,num)=>sum+num*1,0)%3===0
+}
