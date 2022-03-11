@@ -446,3 +446,12 @@ function sum(...arr) {
  function divisibleByThree(str){
   return str.split('').reduce((sum,num)=>sum+num*1,0)%3===0
 }
+
+
+// Pillars
+function pillars(num, dist, width) {
+  if(num==1){
+    return 0
+  }
+  return width*(num-2)+dist*(num-1)*100
+}
