@@ -455,3 +455,9 @@ function pillars(num, dist, width) {
   }
   return width*(num-2)+dist*(num-1)*100
 }
+
+// Nice Array
+function isNice(arr){
+  if(arr.length===0) return false;
+  return arr.every(v=>arr.includes(v+1)||arr.includes(v-1));
+}
