@@ -461,3 +461,9 @@ function isNice(arr){
   if(arr.length===0) return false;
   return arr.every(v=>arr.includes(v+1)||arr.includes(v-1));
 }
+
+
+// List Filtering
+function filter_list(l) {
+  return l.filter(el => typeof el == "number")
+ }
