@@ -467,3 +467,10 @@ function isNice(arr){
 function filter_list(l) {
   return l.filter(el => typeof el == "number")
  }
+
+ 
+//  Filter Long Words
+ function filterLongWords(sentence, n) {
+  let arr = sentence.split(' ')
+  return arr.filter(el => el.length>n)
+ }
