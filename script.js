@@ -503,3 +503,9 @@ function swap(str){
                                if(el.toLowerCase()==el) return el.toUpperCase();})
                                .join('')
  }
+
+
+//Two to one
+ function longest(s1, s2) {
+  return (s1+s2).split('').sort().filter((item, index) => ((s1+s2).split('').sort().indexOf(item)===index)).join('')
+}
