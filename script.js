@@ -509,3 +509,9 @@ function swap(str){
  function longest(s1, s2) {
   return (s1+s2).split('').sort().filter((item, index) => ((s1+s2).split('').sort().indexOf(item)===index)).join('')
 }
+
+
+//Find the middle element
+function gimme (triplet) {
+  return [...triplet].indexOf(triplet.sort((a,b)=>a-b)[1])
+}
