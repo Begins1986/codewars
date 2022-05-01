@@ -536,3 +536,14 @@ var humanYearsCatYearsDogYears = function(humanYears) {
     return [humanYears, 15+9+(humanYears-2)*4, 15+9+(humanYears-2)*5]
   }
 }
+
+
+// Find the vowels
+function vowelIndices(word){
+  let arr=[]
+   let a=word.split('');
+   for (let i=0;i<word.length;i++){
+   if (/[aeuoiy]/gi.test(a[i])) {arr.push(i+1)}
+   }
+   return arr
+ }
