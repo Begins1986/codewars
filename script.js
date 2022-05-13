@@ -565,3 +565,14 @@ function defineSuit(card) {
   if (card.includes('♣')) return 'clubs'; if (card.includes('♠')) return 'spades';
   if (card.includes('♥')) return 'hearts'; if (card.includes('♦')) return 'diamonds';
 }
+
+
+// What is between?
+function between(a, b) {
+  let arr = []
+  for (i=a; i<=b; i++){
+   arr.push(i)
+    console.log(i)
+  }
+  return arr
+}
