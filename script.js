@@ -603,3 +603,15 @@ array=array.slice().sort();
     }
   return count
 }
+
+
+// Sort Numbers
+function solution(nums){
+  if(nums==null){
+    return []
+  } else{
+    return nums.sort(function(a, b) {
+  return a - b;
+})
+  }
+}
