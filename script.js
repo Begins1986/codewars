@@ -615,3 +615,10 @@ function solution(nums){
 })
   }
 }
+
+// Consecutive items
+function consecutive(arr, a, b) {
+  if (arr.indexOf(a)-arr.indexOf(b)==1||arr.indexOf(b)-arr.indexOf(a)==1){
+    return true
+  } else return false
+}
