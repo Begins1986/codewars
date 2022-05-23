@@ -622,3 +622,17 @@ function consecutive(arr, a, b) {
     return true
   } else return false
 }
+
+
+
+// Sum of differences in array
+function sumOfDifferences(arr) {
+  if (arr.length<=1){
+    return 0
+  } else {
+    let arr1 = arr.sort(function(a, b) {
+  return a - b;
+}).reverse();
+    return arr1[0]-arr1[arr.length-1]
+  }
+}
