@@ -651,3 +651,15 @@ function howManyDalmatians(number){
     return dogs[2] 
   }
 }
+
+
+// Name Shuffler
+function nameShuffler(str){
+  return str.split(' ').reverse().join(' ')
+}
+
+
+// FIXME: Replace all dots
+var replaceDots = function(str) {
+  return str.replace(/\./g, '-');
+}
