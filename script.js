@@ -663,3 +663,9 @@ function nameShuffler(str){
 var replaceDots = function(str) {
   return str.replace(/\./g, '-');
 }
+
+
+// Double Char
+function doubleChar(str) {
+  return str.split('').map(el=>el+el).join('')
+}
