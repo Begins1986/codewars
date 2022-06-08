@@ -669,3 +669,9 @@ var replaceDots = function(str) {
 function doubleChar(str) {
   return str.split('').map(el=>el+el).join('')
 }
+
+
+// Is the string uppercase?
+String.prototype.isUpperCase = function() {
+  return this.toString() === this.toUpperCase()
+}
