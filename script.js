@@ -675,3 +675,9 @@ function doubleChar(str) {
 String.prototype.isUpperCase = function() {
   return this.toString() === this.toUpperCase()
 }
+
+
+// Array.diff
+function arrayDiff(a, b) {
+  return a.filter(e => !b.includes(e));
+}
