@@ -681,3 +681,9 @@ String.prototype.isUpperCase = function() {
 function arrayDiff(a, b) {
   return a.filter(e => !b.includes(e));
 }
+
+
+// Welcome to the City
+function sayHello( name, city, state ) {
+return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+}
