@@ -687,3 +687,9 @@ function arrayDiff(a, b) {
 function sayHello( name, city, state ) {
 return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
 }
+
+// Jaden Casing Strings
+String.prototype.toJadenCase = function () {
+  return this.split(' ').
+  map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+};
