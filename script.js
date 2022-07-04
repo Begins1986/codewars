@@ -698,3 +698,9 @@ String.prototype.toJadenCase = function () {
 function towerCombination(n){
   return n === 1 ? 1 : n * towerCombination(n - 1);
 }
+
+
+// Average Scores
+function average(scores) {
+  return Math.round(scores.reduce((first,next)=>(first+next),0)/scores.length)
+}
