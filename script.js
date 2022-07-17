@@ -704,3 +704,10 @@ function towerCombination(n){
 function average(scores) {
   return Math.round(scores.reduce((first,next)=>(first+next),0)/scores.length)
 }
+
+
+
+// Return the closest number multiple of 10
+const closestMultiple10 = num => {
+  return Math.round(num / 10) * 10;
+};
