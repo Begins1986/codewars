@@ -711,3 +711,9 @@ function average(scores) {
 const closestMultiple10 = num => {
   return Math.round(num / 10) * 10;
 };
+
+
+// Sort and Star
+function twoSort(s) {
+  return s.sort()[0].split('').join('***');
+  }
