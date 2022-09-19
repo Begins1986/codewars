@@ -717,3 +717,9 @@ const closestMultiple10 = num => {
 function twoSort(s) {
   return s.sort()[0].split('').join('***');
   }
+
+
+// Build a square
+function generateShape(int){
+    return Array(int).fill('+'.repeat(int)).join('\n')
+   }
