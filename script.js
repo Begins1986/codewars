@@ -728,3 +728,9 @@ function generateShape(int){
    function closest(arr){
   return arr.sort((a, b) => Math.abs(a) - Math.abs(b)).includes(arr[0] * -1) && arr[0] !== 0 ? null : arr[0];
 }
+
+
+//A Needle in the Haystack
+function findNeedle(haystack) {
+  return "found the needle at position " + haystack.indexOf("needle");
+}
