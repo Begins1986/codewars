@@ -734,3 +734,8 @@ function generateShape(int){
 function findNeedle(haystack) {
   return "found the needle at position " + haystack.indexOf("needle");
 }
+
+//To square(root) or not to square(root)
+function squareOrSquareRoot(array) {
+  return array.map(el=>Number.isInteger(Math.sqrt(el))?Math.sqrt(el):el**2);  
+}
