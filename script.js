@@ -739,3 +739,9 @@ function findNeedle(haystack) {
 function squareOrSquareRoot(array) {
   return array.map(el=>Number.isInteger(Math.sqrt(el))?Math.sqrt(el):el**2);  
 }
+
+//Add new item
+function addExtra( listOfNumbers ){
+  console.log(listOfNumbers)
+    return [...listOfNumbers,1]
+}
