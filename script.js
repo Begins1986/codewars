@@ -745,3 +745,9 @@ function addExtra( listOfNumbers ){
   console.log(listOfNumbers)
     return [...listOfNumbers,1]
 }
+
+
+//exampleSort
+function exampleSort(arr,exampleArr){
+  return arr.sort((x,y) => exampleArr.indexOf(x) - exampleArr.indexOf(y));
+  }
