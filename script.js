@@ -751,3 +751,11 @@ function addExtra( listOfNumbers ){
 function exampleSort(arr,exampleArr){
   return arr.sort((x,y) => exampleArr.indexOf(x) - exampleArr.indexOf(y));
   }
+
+//stringTransformer
+function stringTransformer(str) {
+  return str.split` `.map(v=>v.replace(/./gi,v=>{
+ if (v===v.toLowerCase()) return v.toUpperCase()
+ if (v===v.toUpperCase()) return v.toLowerCase()
+ })).reverse().join` `
+}
