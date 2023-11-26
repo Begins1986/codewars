@@ -764,3 +764,8 @@ function stringTransformer(str) {
 var findAverage = function (nums) {
   return nums.reduce((a,b)=>(a+b),0)/nums.length
 }
+
+//LeapYear
+function isLeapYear(year) {
+  return (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
+}
