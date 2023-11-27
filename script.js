@@ -769,3 +769,10 @@ var findAverage = function (nums) {
 function isLeapYear(year) {
   return (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
 }
+
+
+
+//Total amount of points
+const points=games=>games.reduce((output,current)=>{
+  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
+},0)
