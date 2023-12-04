@@ -776,3 +776,10 @@ function isLeapYear(year) {
 const points=games=>games.reduce((output,current)=>{
   return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 },0)
+
+
+//Smallest value of an array
+function min(arr, toReturn) {
+  if (toReturn==='value') return Math.min(...arr)
+  return arr.indexOf(Math.min(...arr))
+}
